@@ -44,3 +44,12 @@ docker-compose up --build
 	- docker logs id_container (see the logs of a container)
 	- docker start/stop id_container (start/stop a container)
 
+## Steps while setting up the projects ## 
+    - for server:
+		- npm init
+		- npm i express pg cors
+		- nodemon index (in server path)
+
+	- for client:
+		- npx create-react-app client
+		- yarn start (in client path)
