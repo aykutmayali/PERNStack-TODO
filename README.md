@@ -18,3 +18,29 @@ docker-compose up --build
 # TODO
 
 .env dosyası dönüştürülüp eklenecek mi ?
+
+
+# Docker-React-Node-Express-Postgres (CRUD)
+
+## Components ##
+	- Docker
+	- React
+	- Nodejs (Express Framework)
+	- Postgres
+
+## Front-end components ##
+    - React
+
+
+## Server components ##
+	- CRUD
+	- Database:
+		- Postgres
+
+## Useful Docker commands ##
+	- docker-compose up (run the services)
+	- docker-compose up -d (run the services in the background)
+	- docker ps (list the containers are running)
+	- docker logs id_container (see the logs of a container)
+	- docker start/stop id_container (start/stop a container)
+
