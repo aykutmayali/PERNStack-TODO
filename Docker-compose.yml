@@ -1,19 +1,19 @@
-version: "3"
+version: "3.8"
 services:
-  react_client:
-    container_name: "aykutmyl/perntodo-client"  
+  client:
+    container_name: "perntodo-client-compose"  
     build: ./client/
     stdin_open: true
     ports:
-      - 3000:3000
+      - 4002:4002
     depends_on:
-      - aykutmyl/perntodo-server
+      - server
 
-  node_backend:
-    container_name: "aykutmyl/perntodo-server"
+  server:
+    container_name: "perntodo-server-compose"
     build: ./server/
     ports:
-      - "3001:3001"
+      - "4003:4003"
   pg:
     image: "postgres:latest"
     container_name: "postgres"

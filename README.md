@@ -1,21 +1,21 @@
 # PERNStack-TODO
  
-docker build -f Dockerfile.dev -t aykutmyl/perntodo-client .
+<!-- docker build -f Dockerfile.dev -t aykutmyl/perntodo-client .
+docker run -it -p 4002:3000 aykutmyl/perntodo-client -->
 
-docker run -it -p 4002:3000 aykutmyl/perntodo-client
 
+docker build -t 3702670/perntodo-client .
+docker run --name perntodo-client -p 4002:3000 -d 3702670/perntodo-client
 
 --------------
 
-docker build -f Dockerfile.dev -t aykutmyl/perntodo-server .
-
+<!-- docker build -f Dockerfile.dev -t aykutmyl/perntodo-server .
 docker run -it -p 4003:5000 aykutmyl/perntodo-server
 
 docker build -t your_dockerhub_username/nodejs-image-demo .
+docker run --name nodejs-image-demo -p 80:8080 -d your_dockerhub_username/nodejs-image-demo -->
 
 docker build -t 3702670/perntodo-server .
-
-docker run --name nodejs-image-demo -p 80:8080 -d your_dockerhub_username/nodejs-image-demo
 docker run --name perntodo-server -p 4003:5000 -d 3702670/perntodo-server
 
 
